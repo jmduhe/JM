@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <title>
+            jQuery心型图片墙鼠标悬浮变大
+        </title>
+        <style type="text/css">
+            *{padding:0; margin:0;} ul,li{list-style:none;} body{font:12px/20px "Microsoft
+            Yahei","SimSun",Arial,sans-serif; background:#CCC;} .heartPic{width:749px;height:630px;margin:60px
+            auto 0 auto;} .heartPic ul{float:left;width:749px;} .heartPic ul li{float:left;width:100px;height:100px;padding:2px;cursor:pointer;}
+            .heartPic ul li.on{z-index:99;} .heartPic ul li.on .in{position:relative;left:-50px;top:-50px;padding:5px
+            5px 20px 5px;background:#666;} .heartPic ul li .pTxt{display:none;width:100px;height:15px;text-align:center;color:#fff;overflow:hidden;}
+            .heartPic .showDiv{display:block;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="heartPic">
+            <ul>
+                <li>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src=""
+                        />
+                        <p class="pTxt">
+                            可爱的女娃娃
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/5a0c9923597568af71375e07a31688d.jpg"
+                        />
+                        <p class="pTxt">
+                            呆萌的小熊
+                        </p>
+                    </div>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/546248add05e2a962932ed876f98930.jpg"
+                        />
+                        <p class="pTxt">
+                            卡哇伊的小熊
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/0949429d6106e4b18324cca7ab46fe7.jpg"
+                        />
+                        <p class="pTxt">
+                            女巫骑着扫帚
+                        </p>
+                    </div>
+                </li>
+                <li>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/0eaf8985e29adf8cb200f6a455002c5.jpg"
+                        />
+                        <p class="pTxt">
+                            女娃娃
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/9a05ddc77f1cc3efc9be246178a8b0e.jpg"
+                        />
+                        <p class="pTxt">
+                            星星可爱
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/e7ffb5a355e0e6e204ea79c9236d117.jpg"
+                        />
+                        <p class="pTxt">
+                            呆萌女
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/微信图片_20221030131242.jpg"
+                        />
+                        <p class="pTxt">
+                            狗狗
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="150" src="/img/微信图片_20220826124808.jpg"
+                        />
+                        <p class="pTxt">
+                            绿树
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_10.jpg"
+                        />
+                        <p class="pTxt">
+                            粉爱粉爱的
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_11.jpg"
+                        />
+                        <p class="pTxt">
+                            蜡笔小新
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_12.jpg"
+                        />
+                        <p class="pTxt">
+                            震不碎的心
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_13.jpg"
+                        />
+                        <p class="pTxt">
+                            很有意境
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_14.jpg"
+                        />
+                        <p class="pTxt">
+                            樱木花道最爱啊
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_15.jpg"
+                        />
+                        <p class="pTxt">
+                            俩骷髅
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_16.jpg"
+                        />
+                        <p class="pTxt">
+                            萌妹子
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_17.jpg"
+                        />
+                        <p class="pTxt">
+                            可爱的小狗
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_18.jpg"
+                        />
+                        <p class="pTxt">
+                            夫妇俩白头偕老
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_19.jpg"
+                        />
+                        <p class="pTxt">
+                            刷子
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_20.jpg"
+                        />
+                        <p class="pTxt">
+                            偶的头像
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_21.jpg"
+                        />
+                        <p class="pTxt">
+                            树叶子
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_22.jpg"
+                        />
+                        <p class="pTxt">
+                            星星
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_23.jpg"
+                        />
+                        <p class="pTxt">
+                            浅色哦
+                        </p>
+                    </div>
+                </li>
+                <li>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_24.jpg"
+                        />
+                        <p class="pTxt">
+                            太阳帅哥
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_25.jpg"
+                        />
+                        <p class="pTxt">
+                            大笑脸
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_26.jpg"
+                        />
+                        <p class="pTxt">
+                            企鹅
+                        </p>
+                    </div>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <div class="in">
+                        <img width="100" height="100" src="/jscss/demoimg/201404/index_27.jpg"
+                        />
+                        <p class="pTxt">
+                            小兔子
+                        </p>
+                    </div>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="/ajaxjs/jquery-1.6.2.min.js">
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $(".heartPic li").hover(function() {
+                    $(this).addClass("on");
+                    $(this).find("img").animate({
+                        "width": "200px",
+                        "height": "200px"
+                    });
+                    $(this).find("div").animate({
+                        "width": "200px",
+                        "height": "200px"
+                    });
+                    $(this).find(".pTxt").animate({
+                        "width": "200px",
+                        "height": "20px"
+                    });
+                    $(this).find("p").addClass("showDiv");
+                },
+                function() {
+                    $(this).animate({
+                        height: "100px"
+                    },
+                    100).removeClass("on");
+                    $(this).find("img").stop(true, true).animate({
+                        "width": "100px",
+                        "height": "100px"
+                    });
+                    $(this).find("div").stop(true, true).animate({
+                        "width": "100px",
+                        "height": "100px"
+                    });
+                    $(this).find(".pTxt").stop(true, true).animate({
+                        "width": "0px",
+                        "height": "0px"
+                    });
+                });
+            })
+        </script>
+        <div style="text-align:center;clear:both">
+        </div>
+    </body>
+ 
+</html>
